@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.parent.postMessage({cmd: "location", data: url.href}, trustedOrigin);
         loadTimer = setTimeout(() => {
             location.replace(url);
-        }, 10);
+        }, 500);
     });
 
     button.addEventListener("click", () => {
