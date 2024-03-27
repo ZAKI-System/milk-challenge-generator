@@ -7,13 +7,27 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>ミルクちゃんチャレンジ....ジェネレータ</h1>
+    <h1><span id="title">ミルクちゃんチャレンジ</span>....ジェネレータ</h1>
     <fieldset>
         <legend>コントローラー</legend>
         <div>
             <button type="button" id="button">生成</button>
             <del><strong>運が悪いとブラウザがしばらく固まります</strong></del>
             <span>多分固まらなくしました</span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend><button type="button" id="button-transition">画面遷移</button></legend>
+        <div id="transition-panel">
+            <div>
+                <label for="input-title" style="display: inline-block; min-width: 5em;">タイトル:</label>
+                <input type="text" id="input-title">
+            </div>
+            <div>
+                <label for="input-word" style="display: inline-block; min-width: 5em;">単語:</label>
+                <input type="text" id="input-word">
+            </div>
+            <button type="button" id="button-load">読み込み</button>
         </div>
     </fieldset>
     <fieldset>
